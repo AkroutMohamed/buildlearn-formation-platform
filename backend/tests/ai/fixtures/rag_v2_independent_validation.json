@@ -1,0 +1,180 @@
+{
+  "freeze": {
+    "collection_sha256": "61e6cd658f7edde04d3bb7312b2cc01a1535ace38f23baea277ecab679748eb4",
+    "pre_refinement_modules": {
+      "hierarchical_rag_v2.py": "eca7d2c700b7bad322311267bc0f2810d6c6937343f34b5fad600c191672b0b6",
+      "answer_validation_v2.py": "e0f21ba80c067e0bf7b3d774cd476e0856bd79035bf01f087078fad22fea22af"
+    },
+    "purpose": "Independent source-disjoint RAG validation; frozen before further RAG-only safety/markup refinements; no parameter search"
+  },
+  "labels": [
+    {
+      "id": "IV01",
+      "query": "Quelle tension et quelle vitesse a vide indique ELAB2078 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "0bca250d1cabc854",
+          "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+          "file_name": "ELAB2078%20Technical%20Data.pdf",
+          "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+          "text": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min"
+        }
+      ]
+    },
+    {
+      "id": "IV02",
+      "query": "Quels couples de serrage et de rupture offre ECIWL20455 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "2219410cccc71221",
+          "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+          "file_name": "ECIWL20455%20Technical%20Data.pdf",
+          "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+          "text": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend :"
+        }
+      ]
+    },
+    {
+      "id": "IV03",
+      "query": "Combien de niveaux affiche la LED de charge du ELBCPK1012 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "4df75bb87a1c64e5",
+          "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+          "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+          "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+          "text": "Des cellules Li-Ion de haute qualité signifient pas d'effet mémoire, une faible auto-décharge et une puissance élevée et constante\nNiveau de charge actuel indiqué par un affichage LED à 3 niveaux\nBoîtier protégé contre la poussière, la corrosion et les dommages mécaniques Tension : 20V Avec 1 batterie lithium-ion"
+        }
+      ]
+    },
+    {
+      "id": "IV04",
+      "query": "EFC1352 demande-t-il une protection gazeuse ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "55ef299817a04d30",
+          "document_id": "full-EFC1352%20Technical%20Data-962bf90b",
+          "file_name": "EFC1352%20Technical%20Data.pdf",
+          "source_path": "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf",
+          "text": "1. Soudage de l'acier au carbone\n2. Maintenance civile\n3. Soudage de tuyauterie\n4. Soudage de réservoirs sous pression\n1. Pas besoin de protection gazeuse, facile à utiliser\n2. Réglage du courant, opération pratique Pas de gaz requis Tension d'entrée : 1~220-240V Fréquence : 50/60Hz"
+        }
+      ]
+    },
+    {
+      "id": "IV05",
+      "query": "Quel couple maximal et quel diametre de mandrin pour ECIDL209686 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "78fdf841ed57d71f",
+          "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+          "file_name": "ECIDL209686%20Technical%20Data.pdf",
+          "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+          "text": "Vitesse à vide : 0-500/0-2000 tr/min\nCadence de percussion max. : 30000 cpm Couple max. : 96 Nm Mandrin métallique Jacobs\nCapacité du mandrin : 13 mm Réglages de couple : 22+1+1"
+        }
+      ]
+    },
+    {
+      "id": "IV06",
+      "query": "Quelle tension et combien de batteries comprend ELBCPK2212 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "854cec8546c7775d",
+          "document_id": "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+          "file_name": "ELBCPK2212%20Technical%20Data.pdf",
+          "source_path": "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf",
+          "text": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED. Une seule batterie compatible avec tous les outils multifonctions P20S. Chargeur intelligent rapide (EFCR20200) :"
+        }
+      ]
+    },
+    {
+      "id": "IV07",
+      "query": "Quels supports sont interdits dans la fiche FULL ECO1 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "5eca56a2e6353c0e",
+          "document_id": "full-FULL%20ECO1-bfeacce9",
+          "file_name": "FULL%20ECO1.pdf",
+          "source_path": "ai_data\\raw\\sofap\\FULL%20ECO1.pdf",
+          "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre."
+        }
+      ]
+    },
+    {
+      "id": "IV08",
+      "query": "Quels supports sont interdits dans la fiche LIKA FINA1 ?",
+      "category": "positive",
+      "expected": "answered",
+      "evidence": [
+        {
+          "chunk_id": "8ed2bc02e7f85eb2",
+          "document_id": "full-LIKA%20FINA1-890840ee",
+          "file_name": "LIKA%20FINA1.pdf",
+          "source_path": "ai_data\\raw\\sofap\\LIKA%20FINA1.pdf",
+          "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre."
+        }
+      ]
+    },
+    {
+      "id": "IN01",
+      "query": "Quel est le prix actuel de ELAB2078 ?",
+      "category": "unavailable price",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN02",
+      "query": "Quelle est la garantie exacte de ECIWL20455 ?",
+      "category": "unavailable warranty",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN03",
+      "query": "Quelle dose injectable de ELBCPK1012 faut-il prescrire ?",
+      "category": "unsupported medical application",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN04",
+      "query": "Quel couple a cet outil ?",
+      "category": "ambiguous product",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN05",
+      "query": "Quelle tension a ABCXYZ987654 ?",
+      "category": "unknown reference",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN06",
+      "query": "Comparer ECIDL209686 et ABCXYZ987654.",
+      "category": "partially unknown comparison",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN07",
+      "query": "Quel temps fera-t-il demain ?",
+      "category": "outside corpus",
+      "expected": "insufficient"
+    },
+    {
+      "id": "IN08",
+      "query": "Quelle resistance au feu en minutes est certifiee pour ELAB2078 ?",
+      "category": "unavailable certification",
+      "expected": "insufficient"
+    }
+  ]
+}

@@ -1,0 +1,3626 @@
+{
+  "run_utc": "2026-09-26T19:24:37.637633+00:00",
+  "model": "qwen2.5-coder:7b",
+  "rag_implementation_sha256": "eca7d2c700b7bad322311267bc0f2810d6c6937343f34b5fad600c191672b0b6",
+  "validator_sha256": "2d3be189d931d217f3ceb94d37c3a5d8e7b53e63eb18f3a65972473e4963a533",
+  "validation_set_sha256": "4d40b5a4e420cafa6e44bb028459bced6056e109aa47442c9b2ac567d2e6e9d9",
+  "retrieval_implementation_sha256": "bec257494381f2d42df473c1372013fb56183b4450860565c1d9013f9fac0c48",
+  "collection": "buildlearn_products_hierarchical_v1",
+  "collection_sha256": "61e6cd658f7edde04d3bb7312b2cc01a1535ace38f23baea277ecab679748eb4",
+  "records": [
+    {
+      "case": {
+        "id": "IV01",
+        "query": "Quelle tension et quelle vitesse a vide indique ELAB2078 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "0bca250d1cabc854",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "text": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min"
+          }
+        ]
+      },
+      "response": {
+        "answer": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "Quelle tension et quelle vitesse a vide indique ELAB2078 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "0bca250d1cabc854",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.9656869427540293,
+            "text": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min",
+            "evidence_kind": "child",
+            "parent_id": "c2355a1218b1849f",
+            "provenance": {
+              "dense_score": 0.74977374,
+              "dense_rank": 1,
+              "lexical_score": 1.9656869427540293,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "1b86209b6c0e4dcb",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.4477205569612763,
+            "text": "L’outil électrique est destiné à souffler des substances non nocives (par exemple, des débris de sciage, des copeaux de métal, de la poussière de pierre, etc.) produites lors du sciage, du perçage ou du meulage.\nL’outil électrique ne convient pas au soufflage de matériaux chauds, inflammables ou explosifs.\nConception légère et compacte",
+            "evidence_kind": "child",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4477205569612763,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "9b7d6108865ce3be",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.4477205569612763,
+            "text": "Débit d’air maximal : 2,7 m³/min Batterie et chargeur vendus séparément Emballé dans une boîte couleur",
+            "evidence_kind": "child",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4477205569612763,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "1b86209b6c0e4dcb",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.4477205569612763,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4477205569612763,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ELAB2078"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ELAB2078%20Technical%20Data-f807d4c7",
+              "ELAB2078%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "a",
+              "elab2078",
+              "et",
+              "indique",
+              "quelle",
+              "tension",
+              "vide",
+              "vitesse"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "0bca250d1cabc854",
+            "1b86209b6c0e4dcb",
+            "9b7d6108865ce3be"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2318,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "0bca250d1cabc854",
+            "1b86209b6c0e4dcb",
+            "9b7d6108865ce3be",
+            "08d35190dfc2d4bd"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min",
+            "support_chunk_ids": [
+              "0bca250d1cabc854"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "c2355a1218b1849f",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 2.77,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Tension : 20 V\nVitesse à vide : 18 000 tr/min",
+            "support_chunk_ids": [
+              "0bca250d1cabc854"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV02",
+        "query": "Quels couples de serrage et de rupture offre ECIWL20455 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "2219410cccc71221",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "text": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend :"
+          }
+        ]
+      },
+      "response": {
+        "answer": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend : [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "Quels couples de serrage et de rupture offre ECIWL20455 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "2219410cccc71221",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.75534731966922,
+            "text": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend :",
+            "evidence_kind": "child",
+            "parent_id": "c084e3e86ed48d70",
+            "provenance": {
+              "dense_score": 0.81741893,
+              "dense_rank": 1,
+              "lexical_score": 1.75534731966922,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "57cd2019e94b4466",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.5490371584138996,
+            "text": "La machine est destinée à enfoncer et desserrer des vis et des boulons ainsi qu'à serrer et desserrer des écrous dans la plage de dimensions respective.\nMoteur sans balais délivrant un couple de serrage de 405 Nm et un couple de desserrage de 555 Nm\nInterrupteur de sélection de puissance à 3 vitesses (0-1800/0-2000/0-2400 tr/min & 0-2200/0-2600/0-3000 bpm) pour un contrôle précis du serrage dans une large gamme d'applications",
+            "evidence_kind": "child",
+            "parent_id": "93be66a315b3d80a",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.5490371584138996,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "3579876eb25c0917",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "list_item",
+            "score": 1.390898734800705,
+            "text": "5 modes avant et 5 modes arrière pour une efficacité accrue",
+            "evidence_kind": "child",
+            "parent_id": "93be66a315b3d80a",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.390898734800705,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "57cd2019e94b4466",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.5490371584138996,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "93be66a315b3d80a",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.5490371584138996,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ECIWL20455"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ECIWL20455%20Technical%20Data-791ec736",
+              "ECIWL20455%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "couples",
+              "de",
+              "eciwl20455",
+              "et",
+              "offre",
+              "quels",
+              "rupture",
+              "serrage"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "2219410cccc71221",
+            "57cd2019e94b4466",
+            "3579876eb25c0917"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2408,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "2219410cccc71221",
+            "57cd2019e94b4466",
+            "3579876eb25c0917",
+            "93be66a315b3d80a"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend :",
+            "support_chunk_ids": [
+              "2219410cccc71221"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend :",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "c084e3e86ed48d70",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 2.2,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Couple de serrage : 405Nm Couple de rupture : 555Nm",
+            "support_chunk_ids": [
+              "2219410cccc71221"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV03",
+        "query": "Combien de niveaux affiche la LED de charge du ELBCPK1012 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "4df75bb87a1c64e5",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "text": "Des cellules Li-Ion de haute qualité signifient pas d'effet mémoire, une faible auto-décharge et une puissance élevée et constante\nNiveau de charge actuel indiqué par un affichage LED à 3 niveaux\nBoîtier protégé contre la poussière, la corrosion et les dommages mécaniques Tension : 20V Avec 1 batterie lithium-ion"
+          }
+        ]
+      },
+      "response": {
+        "answer": "Niveau de charge actuel indiqué par un affichage LED à 3 niveaux [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "Combien de niveaux affiche la LED de charge du ELBCPK1012 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "4df75bb87a1c64e5",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.942411854018764,
+            "text": "Des cellules Li-Ion de haute qualité signifient pas d'effet mémoire, une faible auto-décharge et une puissance élevée et constante\nNiveau de charge actuel indiqué par un affichage LED à 3 niveaux\nBoîtier protégé contre la poussière, la corrosion et les dommages mécaniques Tension : 20V Avec 1 batterie lithium-ion",
+            "evidence_kind": "child",
+            "parent_id": "3680ccb8f47c413e",
+            "provenance": {
+              "dense_score": 0.6440724,
+              "dense_rank": 31,
+              "lexical_score": 1.942411854018764,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "49c2b9fab7070ca8",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "(EBPK20021)"
+            ],
+            "block_type": "paragraph",
+            "score": 1.7412841738934177,
+            "text": "Avec 1 chargeur (EFCR20200) Batterie lithium-ion (EBPK20021) :\nBatterie lithium-ion 4,0 Ah Indicateur de charge LED\nUne batterie compatible avec tous les outils multiples P20S Chargeur de batterie lithium-ion",
+            "evidence_kind": "child",
+            "parent_id": "2379f811669bef33",
+            "provenance": {
+              "dense_score": 0.78262573,
+              "dense_rank": 1,
+              "lexical_score": 1.7412841738934177,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "84c1dc0ce1057dfc",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "(EFCR20200) :"
+            ],
+            "block_type": "key_value",
+            "score": 1.4056003528226308,
+            "text": "Tension d'entrée : 220-240V~50/60Hz Tension de sortie : 20V Courant de sortie : 2A Emballé dans un double blister",
+            "evidence_kind": "child",
+            "parent_id": "ed2acb097ec59859",
+            "provenance": {
+              "dense_score": 0.6275759,
+              "dense_rank": 59,
+              "lexical_score": 1.4056003528226308,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "4df75bb87a1c64e5",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.942411854018764,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "3680ccb8f47c413e",
+            "provenance": {
+              "dense_score": 0.6440724,
+              "dense_rank": 31,
+              "lexical_score": 1.942411854018764,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 5",
+            "chunk_id": "49c2b9fab7070ca8",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.7412841738934177,
+            "text": "(EBPK20021)",
+            "evidence_kind": "verified_parent",
+            "parent_id": "2379f811669bef33",
+            "provenance": {
+              "dense_score": 0.78262573,
+              "dense_rank": 1,
+              "lexical_score": 1.7412841738934177,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ELBCPK1012"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ELBCPK1012%20Technical%20Data-566d4669",
+              "ELBCPK1012%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "affiche",
+              "charge",
+              "combien",
+              "de",
+              "du",
+              "elbcpk1012",
+              "la",
+              "led",
+              "niveaux"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "4df75bb87a1c64e5",
+            "49c2b9fab7070ca8",
+            "84c1dc0ce1057dfc"
+          ],
+          "supplied_sources": 5,
+          "context_chars": 2771,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "4df75bb87a1c64e5",
+            "49c2b9fab7070ca8",
+            "84c1dc0ce1057dfc",
+            "3680ccb8f47c413e",
+            "2379f811669bef33"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "Niveau de charge actuel indiqué par un affichage LED à 3 niveaux",
+            "support_chunk_ids": [
+              "4df75bb87a1c64e5"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "Niveau de charge actuel indiqué par un affichage LED à 3 niveaux",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "ed2acb097ec59859",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 2.28,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Niveau de charge actuel indiqué par un affichage LED à 3 niveaux",
+            "support_chunk_ids": [
+              "4df75bb87a1c64e5"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV04",
+        "query": "EFC1352 demande-t-il une protection gazeuse ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "55ef299817a04d30",
+            "document_id": "full-EFC1352%20Technical%20Data-962bf90b",
+            "file_name": "EFC1352%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf",
+            "text": "1. Soudage de l'acier au carbone\n2. Maintenance civile\n3. Soudage de tuyauterie\n4. Soudage de réservoirs sous pression\n1. Pas besoin de protection gazeuse, facile à utiliser\n2. Réglage du courant, opération pratique Pas de gaz requis Tension d'entrée : 1~220-240V Fréquence : 50/60Hz"
+          }
+        ]
+      },
+      "response": {
+        "answer": "1. Pas besoin de protection gazeuse, facile à utiliser [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "EFC1352 demande-t-il une protection gazeuse ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "55ef299817a04d30",
+            "document_id": "full-EFC1352%20Technical%20Data-962bf90b",
+            "file_name": "EFC1352%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "list_item",
+            "score": 1.7919300243502807,
+            "text": "1. Soudage de l'acier au carbone\n2. Maintenance civile\n3. Soudage de tuyauterie\n4. Soudage de réservoirs sous pression\n1. Pas besoin de protection gazeuse, facile à utiliser\n2. Réglage du courant, opération pratique Pas de gaz requis Tension d'entrée : 1~220-240V Fréquence : 50/60Hz",
+            "evidence_kind": "child",
+            "parent_id": "d39d1794309ab13f",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.7919300243502807,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "3f24b579c6bd1fb5",
+            "document_id": "full-EFC1352%20Technical%20Data-962bf90b",
+            "file_name": "EFC1352%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.404913297410509,
+            "text": "Diamètre de l'électrode MMA (mm) :\n1,6-3,2",
+            "evidence_kind": "child",
+            "parent_id": "d39d1794309ab13f",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.404913297410509,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "b94a885684d64bf9",
+            "document_id": "full-EFC1352%20Technical%20Data-962bf90b",
+            "file_name": "EFC1352%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.404913297410509,
+            "text": "Emballé dans une boîte couleur",
+            "evidence_kind": "child",
+            "parent_id": "d39d1794309ab13f",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.404913297410509,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "55ef299817a04d30",
+            "document_id": "full-EFC1352%20Technical%20Data-962bf90b",
+            "file_name": "EFC1352%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.7919300243502807,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "d39d1794309ab13f",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.7919300243502807,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "EFC1352"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-EFC1352%20Technical%20Data-962bf90b",
+              "EFC1352%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\EFC1352%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "demande",
+              "efc1352",
+              "gazeuse",
+              "il",
+              "protection",
+              "t",
+              "une"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "55ef299817a04d30",
+            "3f24b579c6bd1fb5",
+            "b94a885684d64bf9"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2144,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "55ef299817a04d30",
+            "3f24b579c6bd1fb5",
+            "b94a885684d64bf9",
+            "d39d1794309ab13f"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "1. Pas besoin de protection gazeuse, facile à utiliser",
+            "support_chunk_ids": [
+              "55ef299817a04d30"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "1. Pas besoin de protection gazeuse, facile à utiliser",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": []
+      },
+      "seconds": 1.96,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Pas besoin de protection gazeuse",
+            "support_chunk_ids": [
+              "55ef299817a04d30"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV05",
+        "query": "Quel couple maximal et quel diametre de mandrin pour ECIDL209686 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "78fdf841ed57d71f",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "text": "Vitesse à vide : 0-500/0-2000 tr/min\nCadence de percussion max. : 30000 cpm Couple max. : 96 Nm Mandrin métallique Jacobs\nCapacité du mandrin : 13 mm Réglages de couple : 22+1+1"
+          }
+        ]
+      },
+      "response": {
+        "answer": "1. Moteur brushless, puissance élevée, couple maximal jusqu’à 96 Nm [SOURCE 1]\n2. Mandrin entièrement métallique de 13 mm, avec verrouillage, pour une meilleure stabilité de serrage [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "Quel couple maximal et quel diametre de mandrin pour ECIDL209686 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "83467e09e122eb1e",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "list_item",
+            "score": 2.0191271095538337,
+            "text": "1. Moteur brushless, puissance élevée, couple maximal jusqu’à 96 Nm\n2. Mandrin entièrement métallique de 13 mm, avec verrouillage, pour une meilleure stabilité de serrage\n3. Réglage sur 22+1+1 positions, avec удар? no, translate impact mode = percussion/impact, adapté à différents environnements de travail\n4. Boîte d’accessoires incluse, adaptée à de  ددعتمscénarios d’utilisation\n5. Boîtier d’engrenages entièrement en aluminium Moteur sans balais Tension : 20 V",
+            "evidence_kind": "child",
+            "parent_id": "0cc40be3270a8583",
+            "provenance": {
+              "dense_score": 0.62446094,
+              "dense_rank": 82,
+              "lexical_score": 2.0191271095538337,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "78fdf841ed57d71f",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.7988390768393367,
+            "text": "Vitesse à vide : 0-500/0-2000 tr/min\nCadence de percussion max. : 30000 cpm Couple max. : 96 Nm Mandrin métallique Jacobs\nCapacité du mandrin : 13 mm Réglages de couple : 22+1+1",
+            "evidence_kind": "child",
+            "parent_id": "018f520ed7c4c02d",
+            "provenance": {
+              "dense_score": 0.77802676,
+              "dense_rank": 3,
+              "lexical_score": 1.7988390768393367,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "001553e7e1b254a3",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "LED"
+            ],
+            "block_type": "list_item",
+            "score": 1.4202880327144969,
+            "text": "2 batteries 4,0 Ah (EBPK20021)\n1 chargeur (EFCR20411)",
+            "evidence_kind": "child",
+            "parent_id": "f02d14d0cfb22be9",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4202880327144969,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "83467e09e122eb1e",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 2.0191271095538337,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "0cc40be3270a8583",
+            "provenance": {
+              "dense_score": 0.62446094,
+              "dense_rank": 82,
+              "lexical_score": 2.0191271095538337,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 5",
+            "chunk_id": "001553e7e1b254a3",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.4202880327144969,
+            "text": "LED",
+            "evidence_kind": "verified_parent",
+            "parent_id": "f02d14d0cfb22be9",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4202880327144969,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ECIDL209686"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+              "ECIDL209686%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "couple",
+              "de",
+              "diametre",
+              "ecidl209686",
+              "et",
+              "mandrin",
+              "maximal",
+              "pour",
+              "quel"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "83467e09e122eb1e",
+            "78fdf841ed57d71f",
+            "001553e7e1b254a3"
+          ],
+          "supplied_sources": 5,
+          "context_chars": 2879,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "83467e09e122eb1e",
+            "78fdf841ed57d71f",
+            "001553e7e1b254a3",
+            "0cc40be3270a8583",
+            "f02d14d0cfb22be9"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "1. Moteur brushless, puissance élevée, couple maximal jusqu’à 96 Nm",
+            "support_chunk_ids": [
+              "83467e09e122eb1e"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "1. Moteur brushless, puissance élevée, couple maximal jusqu’à 96 Nm",
+            "validation": "original_evidence_lines"
+          },
+          {
+            "text": "2. Mandrin entièrement métallique de 13 mm, avec verrouillage, pour une meilleure stabilité de serrage",
+            "support_chunk_ids": [
+              "83467e09e122eb1e"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "2. Mandrin entièrement métallique de 13 mm, avec verrouillage, pour une meilleure stabilité de serrage",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "018f520ed7c4c02d",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 3.15,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Couple maximal jusqu'à 96 Nm",
+            "support_chunk_ids": [
+              "83467e09e122eb1e"
+            ]
+          },
+          {
+            "text": "Mandrin entièrement métallique de 13 mm",
+            "support_chunk_ids": [
+              "83467e09e122eb1e"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV06",
+        "query": "Quelle tension et combien de batteries comprend ELBCPK2212 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "854cec8546c7775d",
+            "document_id": "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+            "file_name": "ELBCPK2212%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf",
+            "text": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED. Une seule batterie compatible avec tous les outils multifonctions P20S. Chargeur intelligent rapide (EFCR20200) :"
+          }
+        ]
+      },
+      "response": {
+        "answer": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED. Une seule batterie compatible avec tous les outils multifonctions P20S. Chargeur intelligent rapide (EFCR20200) : [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "Quelle tension et combien de batteries comprend ELBCPK2212 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "854cec8546c7775d",
+            "document_id": "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+            "file_name": "ELBCPK2212%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 2.25,
+            "text": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED. Une seule batterie compatible avec tous les outils multifonctions P20S. Chargeur intelligent rapide (EFCR20200) :",
+            "evidence_kind": "child",
+            "parent_id": "0ff744ecd6ec152c",
+            "provenance": {
+              "dense_score": 0.7998576,
+              "dense_rank": 1,
+              "lexical_score": 2.25,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.25,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "6b06ef782e51762d",
+            "document_id": "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+            "file_name": "ELBCPK2212%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.7503484012474302,
+            "text": "tension d’entrée : 220-240 V~50/60\nHz, tension de sortie : 20 V, courant de sortie : 2 A. Emballage sous double blister.",
+            "evidence_kind": "child",
+            "parent_id": "62c2e3c9b538f16a",
+            "provenance": {
+              "dense_score": 0.6603842,
+              "dense_rank": 33,
+              "lexical_score": 1.7503484012474302,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.25,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "e40fd0d925e4e99f",
+            "document_id": "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+            "file_name": "ELBCPK2212%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.5513363891298177,
+            "text": "Utilisation universelle pour tous les appareils rechargeables P20S\nÉconomies, respect de l'environnement et flexibilité : le système de gestion de la batterie garantit une sécurité maximale, des performances optimales et une durée de vie prolongée.\nLiberté de mouvement sans fil : fini les câbles emmêlés et travaillez en toute liberté. Les cellules Li-Ion haute qualité offrent une absence d'effet mémoire, une faible autodécharge et une puissance élevée et constante. Le niveau de charge est indiqué par un affichage LED à",
+            "evidence_kind": "child",
+            "parent_id": "0ff744ecd6ec152c",
+            "provenance": {
+              "dense_score": 0.6776645,
+              "dense_rank": 24,
+              "lexical_score": 1.5513363891298177,
+              "lexical_rank": 4,
+              "identifier_match": true,
+              "filename_match": 0.25,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "854cec8546c7775d",
+            "document_id": "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+            "file_name": "ELBCPK2212%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 2.25,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "0ff744ecd6ec152c",
+            "provenance": {
+              "dense_score": 0.7998576,
+              "dense_rank": 1,
+              "lexical_score": 2.25,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.25,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ELBCPK2212"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ELBCPK2212%20Technical%20Data-9fbd74b3",
+              "ELBCPK2212%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ELBCPK2212%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "batteries",
+              "combien",
+              "comprend",
+              "de",
+              "elbcpk2212",
+              "et",
+              "quelle",
+              "tension"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "854cec8546c7775d",
+            "6b06ef782e51762d",
+            "e40fd0d925e4e99f"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2760,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "854cec8546c7775d",
+            "6b06ef782e51762d",
+            "e40fd0d925e4e99f",
+            "0ff744ecd6ec152c"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED. Une seule batterie compatible avec tous les outils multifonctions P20S. Chargeur intelligent rapide (EFCR20200) :",
+            "support_chunk_ids": [
+              "854cec8546c7775d"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED. Une seule batterie compatible avec tous les outils multifonctions P20S. Chargeur intelligent rapide (EFCR20200) :",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "62c2e3c9b538f16a",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 3.34,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Tension : 20 V. Comprend 2 batteries lithium-ion (EBPK20011) et 1 chargeur (EFCR20200). Batterie lithium-ion (EBPK20011) : batterie lithium-ion 2,0 Ah, indicateur de charge LED.",
+            "support_chunk_ids": [
+              "854cec8546c7775d"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV07",
+        "query": "Quels supports sont interdits dans la fiche FULL ECO1 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "5eca56a2e6353c0e",
+            "document_id": "full-FULL%20ECO1-bfeacce9",
+            "file_name": "FULL%20ECO1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\FULL%20ECO1.pdf",
+            "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre."
+          }
+        ]
+      },
+      "response": {
+        "answer": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre. [SOURCE 1]",
+        "grounded": true,
+        "retrieval_query": "Quels supports sont interdits dans la fiche FULL ECO1 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "5eca56a2e6353c0e",
+            "document_id": "full-FULL%20ECO1-bfeacce9",
+            "file_name": "FULL%20ECO1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\FULL%20ECO1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOMAINE D’EMPLOI"
+            ],
+            "block_type": "list_item",
+            "score": 1.2350443782046878,
+            "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre.",
+            "evidence_kind": "child",
+            "parent_id": "2b204617d54cb943",
+            "provenance": {
+              "dense_score": 0.7376758,
+              "dense_rank": 4,
+              "lexical_score": 1.2350443782046878,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "d5deaa1b96cb2a2f",
+            "document_id": "full-FULL%20ECO1-bfeacce9",
+            "file_name": "FULL%20ECO1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\FULL%20ECO1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOMAINE D’EMPLOI"
+            ],
+            "block_type": "list_item",
+            "score": 0.9730776199598657,
+            "text": "•  Ne pas appliquer sur supports gelés ou en cours de dégel, chauds ou en plein soleil, trempés ou sous pluie baƩante et par vent fort.\n• Le port du masque et des gants est recommandé.",
+            "evidence_kind": "child",
+            "parent_id": "2b204617d54cb943",
+            "provenance": {
+              "dense_score": 0.6891889,
+              "dense_rank": 82,
+              "lexical_score": 0.9730776199598657,
+              "lexical_rank": 3,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "39bc184536cd21cf",
+            "document_id": "full-FULL%20ECO1-bfeacce9",
+            "file_name": "FULL%20ECO1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\FULL%20ECO1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOMAINE D’EMPLOI"
+            ],
+            "block_type": "paragraph",
+            "score": 0.9730776199598657,
+            "text": "Supports Admissibles :",
+            "evidence_kind": "child",
+            "parent_id": "2b204617d54cb943",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.9730776199598657,
+              "lexical_rank": 2,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "5eca56a2e6353c0e",
+            "document_id": "full-FULL%20ECO1-bfeacce9",
+            "file_name": "FULL%20ECO1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\FULL%20ECO1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.2350443782046878,
+            "text": "DOMAINE D’EMPLOI",
+            "evidence_kind": "verified_parent",
+            "parent_id": "2b204617d54cb943",
+            "provenance": {
+              "dense_score": 0.7376758,
+              "dense_rank": 4,
+              "lexical_score": 1.2350443782046878,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [],
+            "unknown_identifiers": [],
+            "route_source": null,
+            "route_status": "unrouted",
+            "tokens": [
+              "dans",
+              "eco1",
+              "fiche",
+              "full",
+              "interdits",
+              "la",
+              "quels",
+              "sont",
+              "supports"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "5eca56a2e6353c0e",
+            "d5deaa1b96cb2a2f",
+            "39bc184536cd21cf"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 1954,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "5eca56a2e6353c0e",
+            "d5deaa1b96cb2a2f",
+            "39bc184536cd21cf",
+            "2b204617d54cb943"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [
+          {
+            "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre.",
+            "support_chunk_ids": [
+              "5eca56a2e6353c0e"
+            ],
+            "source_id": "SOURCE 1",
+            "quote": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre.",
+            "validation": "original_evidence_lines"
+          }
+        ],
+        "status": "answered",
+        "omissions": []
+      },
+      "seconds": 4.6,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Support non conforme au DTU 26.1.",
+            "support_chunk_ids": [
+              "5eca56a2e6353c0e"
+            ]
+          },
+          {
+            "text": "Support horizontal.",
+            "support_chunk_ids": [
+              "5eca56a2e6353c0e"
+            ]
+          },
+          {
+            "text": "Support ayant une faible résistance à l’arrachement (RT1).",
+            "support_chunk_ids": [
+              "5eca56a2e6353c0e"
+            ]
+          },
+          {
+            "text": "Support métallique, peint, en plâtre.",
+            "support_chunk_ids": [
+              "5eca56a2e6353c0e"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": true,
+        "cited_expected_source": true,
+        "status": "answered"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "original selected evidence reproduced",
+        "evidence_support": "exact original passage with allowed ID",
+        "completeness": "requested facts present",
+        "product_identity": "expected labeled source",
+        "answer_language": "French source text",
+        "hallucination": "none observed in returned answer",
+        "abstention": "not applicable"
+      }
+    },
+    {
+      "case": {
+        "id": "IV08",
+        "query": "Quels supports sont interdits dans la fiche LIKA FINA1 ?",
+        "category": "positive",
+        "expected": "answered",
+        "evidence": [
+          {
+            "chunk_id": "8ed2bc02e7f85eb2",
+            "document_id": "full-LIKA%20FINA1-890840ee",
+            "file_name": "LIKA%20FINA1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\LIKA%20FINA1.pdf",
+            "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre."
+          }
+        ]
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quels supports sont interdits dans la fiche LIKA FINA1 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "8ed2bc02e7f85eb2",
+            "document_id": "full-LIKA%20FINA1-890840ee",
+            "file_name": "LIKA%20FINA1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\LIKA%20FINA1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOMAINE D’EMPLOI"
+            ],
+            "block_type": "list_item",
+            "score": 1.2373065663885605,
+            "text": "• Classe RT2 et RT3 (béton, brique & maçonnerie de parpaing...) selon DTU 26.1.\n• Maçonneries anciennes et autres supports : nous consulter. Supports Interdits :\n• Support non conforme au DTU 26.1.\n• Support horizontal.\n• Support ayant une faible résistance à l’arrachement (RT1).\n• Support métallique, peint, en plâtre.",
+            "evidence_kind": "child",
+            "parent_id": "c5129aa55c90673e",
+            "provenance": {
+              "dense_score": 0.7100537,
+              "dense_rank": 19,
+              "lexical_score": 1.2373065663885605,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "bd0403d0f803b466",
+            "document_id": "full-LIKA%20FINA1-890840ee",
+            "file_name": "LIKA%20FINA1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\LIKA%20FINA1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOMAINE D’EMPLOI"
+            ],
+            "block_type": "paragraph",
+            "score": 0.9789323992820037,
+            "text": "Supports Admissibles :",
+            "evidence_kind": "child",
+            "parent_id": "c5129aa55c90673e",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.9789323992820037,
+              "lexical_rank": 2,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "d85d5e85e2572688",
+            "document_id": "full-LIKA%20FINA1-890840ee",
+            "file_name": "LIKA%20FINA1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\LIKA%20FINA1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOMAINE D’EMPLOI"
+            ],
+            "block_type": "list_item",
+            "score": 0.9789323992820037,
+            "text": "•  Ne pas appliquer sur supports gelés ou en cours de dégel, chauds ou en plein soleil, trempés ou sous pluie baƩante et par vent fort.\n• En présence de lots de dates diﬀérentes, il est nécessaire de mélanger proporƟonnellement ceux-ci aﬁn d’éviter les éventuels nuançages.\n• Toujours travailler frais sur frais aﬁn d’éviter les reprises et garanƟr une meilleure adhérence inter passes.\n• Le port du masque et des gants est recommandé.",
+            "evidence_kind": "child",
+            "parent_id": "c5129aa55c90673e",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.9789323992820037,
+              "lexical_rank": 3,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "8ed2bc02e7f85eb2",
+            "document_id": "full-LIKA%20FINA1-890840ee",
+            "file_name": "LIKA%20FINA1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\LIKA%20FINA1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.2373065663885605,
+            "text": "DOMAINE D’EMPLOI",
+            "evidence_kind": "verified_parent",
+            "parent_id": "c5129aa55c90673e",
+            "provenance": {
+              "dense_score": 0.7100537,
+              "dense_rank": 19,
+              "lexical_score": 1.2373065663885605,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.4,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Unknown or malformed product reference: FINA1"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [],
+            "unknown_identifiers": [],
+            "route_source": null,
+            "route_status": "unrouted",
+            "tokens": [
+              "dans",
+              "fiche",
+              "fina1",
+              "interdits",
+              "la",
+              "lika",
+              "quels",
+              "sont",
+              "supports"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "8ed2bc02e7f85eb2",
+            "bd0403d0f803b466",
+            "d85d5e85e2572688"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2217,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "8ed2bc02e7f85eb2",
+            "bd0403d0f803b466",
+            "d85d5e85e2572688",
+            "c5129aa55c90673e"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": []
+      },
+      "seconds": 0.1,
+      "model_output_for_review": null,
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": false,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "false abstention against corpus label",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "filename suffix reference heuristic"
+      }
+    },
+    {
+      "case": {
+        "id": "IN01",
+        "query": "Quel est le prix actuel de ELAB2078 ?",
+        "category": "unavailable price",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quel est le prix actuel de ELAB2078 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "0bca250d1cabc854",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.6473002046459027,
+            "text": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min",
+            "evidence_kind": "child",
+            "parent_id": "c2355a1218b1849f",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6473002046459027,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "1b86209b6c0e4dcb",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.6473002046459027,
+            "text": "L’outil électrique est destiné à souffler des substances non nocives (par exemple, des débris de sciage, des copeaux de métal, de la poussière de pierre, etc.) produites lors du sciage, du perçage ou du meulage.\nL’outil électrique ne convient pas au soufflage de matériaux chauds, inflammables ou explosifs.\nConception légère et compacte",
+            "evidence_kind": "child",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6473002046459027,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "9b7d6108865ce3be",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.6473002046459027,
+            "text": "Débit d’air maximal : 2,7 m³/min Batterie et chargeur vendus séparément Emballé dans une boîte couleur",
+            "evidence_kind": "child",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6473002046459027,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "1b86209b6c0e4dcb",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.6473002046459027,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6473002046459027,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Model reported insufficient or ambiguous evidence"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ELAB2078"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ELAB2078%20Technical%20Data-f807d4c7",
+              "ELAB2078%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "actuel",
+              "de",
+              "elab2078",
+              "est",
+              "le",
+              "prix",
+              "quel"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "0bca250d1cabc854",
+            "1b86209b6c0e4dcb",
+            "9b7d6108865ce3be"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2318,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "0bca250d1cabc854",
+            "1b86209b6c0e4dcb",
+            "9b7d6108865ce3be",
+            "08d35190dfc2d4bd"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "c2355a1218b1849f",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 0.68,
+      "model_output_for_review": {
+        "status": "insufficient",
+        "claims": []
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN02",
+        "query": "Quelle est la garantie exacte de ECIWL20455 ?",
+        "category": "unavailable warranty",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quelle est la garantie exacte de ECIWL20455 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "2219410cccc71221",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.6222300449941542,
+            "text": "Couple de serrage : 405Nm Couple de rupture : 555Nm Éclairage de travail LED intégré Comprend :",
+            "evidence_kind": "child",
+            "parent_id": "c084e3e86ed48d70",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6222300449941542,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "3579876eb25c0917",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "list_item",
+            "score": 1.6222300449941542,
+            "text": "5 modes avant et 5 modes arrière pour une efficacité accrue",
+            "evidence_kind": "child",
+            "parent_id": "93be66a315b3d80a",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6222300449941542,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "369529d501d6a52d",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "list_item",
+            "score": 1.6222300449941542,
+            "text": "1 chargeur 20V (EFCR20200) Tension de charge : 220-240V~50/60Hz\n1 pack batterie 2.0Ah (EBPK20011)\n3 douilles (17,19,21mm)",
+            "evidence_kind": "child",
+            "parent_id": "93be66a315b3d80a",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6222300449941542,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "3579876eb25c0917",
+            "document_id": "full-ECIWL20455%20Technical%20Data-791ec736",
+            "file_name": "ECIWL20455%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.6222300449941542,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "93be66a315b3d80a",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6222300449941542,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Model reported insufficient or ambiguous evidence"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ECIWL20455"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ECIWL20455%20Technical%20Data-791ec736",
+              "ECIWL20455%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ECIWL20455%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "de",
+              "eciwl20455",
+              "est",
+              "exacte",
+              "garantie",
+              "la",
+              "quelle"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "2219410cccc71221",
+            "3579876eb25c0917",
+            "369529d501d6a52d"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2100,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "2219410cccc71221",
+            "3579876eb25c0917",
+            "369529d501d6a52d",
+            "93be66a315b3d80a"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "c084e3e86ed48d70",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 0.88,
+      "model_output_for_review": {
+        "status": "insufficient",
+        "claims": []
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN03",
+        "query": "Quelle dose injectable de ELBCPK1012 faut-il prescrire ?",
+        "category": "unsupported medical application",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quelle dose injectable de ELBCPK1012 faut-il prescrire ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "49c2b9fab7070ca8",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "(EBPK20021)"
+            ],
+            "block_type": "paragraph",
+            "score": 1.3736540589357147,
+            "text": "Avec 1 chargeur (EFCR20200) Batterie lithium-ion (EBPK20021) :\nBatterie lithium-ion 4,0 Ah Indicateur de charge LED\nUne batterie compatible avec tous les outils multiples P20S Chargeur de batterie lithium-ion",
+            "evidence_kind": "child",
+            "parent_id": "2379f811669bef33",
+            "provenance": {
+              "dense_score": 0.64882666,
+              "dense_rank": 8,
+              "lexical_score": 1.3736540589357147,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "4df75bb87a1c64e5",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.3736540589357147,
+            "text": "Des cellules Li-Ion de haute qualité signifient pas d'effet mémoire, une faible auto-décharge et une puissance élevée et constante\nNiveau de charge actuel indiqué par un affichage LED à 3 niveaux\nBoîtier protégé contre la poussière, la corrosion et les dommages mécaniques Tension : 20V Avec 1 batterie lithium-ion",
+            "evidence_kind": "child",
+            "parent_id": "3680ccb8f47c413e",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.3736540589357147,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "84c1dc0ce1057dfc",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "(EFCR20200) :"
+            ],
+            "block_type": "key_value",
+            "score": 1.3736540589357147,
+            "text": "Tension d'entrée : 220-240V~50/60Hz Tension de sortie : 20V Courant de sortie : 2A Emballé dans un double blister",
+            "evidence_kind": "child",
+            "parent_id": "ed2acb097ec59859",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.3736540589357147,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "49c2b9fab7070ca8",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.3736540589357147,
+            "text": "(EBPK20021)",
+            "evidence_kind": "verified_parent",
+            "parent_id": "2379f811669bef33",
+            "provenance": {
+              "dense_score": 0.64882666,
+              "dense_rank": 8,
+              "lexical_score": 1.3736540589357147,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 5",
+            "chunk_id": "4df75bb87a1c64e5",
+            "document_id": "full-ELBCPK1012%20Technical%20Data-566d4669",
+            "file_name": "ELBCPK1012%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.3736540589357147,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "3680ccb8f47c413e",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.3736540589357147,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Model reported insufficient or ambiguous evidence"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ELBCPK1012"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ELBCPK1012%20Technical%20Data-566d4669",
+              "ELBCPK1012%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ELBCPK1012%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "de",
+              "dose",
+              "elbcpk1012",
+              "faut",
+              "il",
+              "injectable",
+              "prescrire",
+              "quelle"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "49c2b9fab7070ca8",
+            "4df75bb87a1c64e5",
+            "84c1dc0ce1057dfc"
+          ],
+          "supplied_sources": 5,
+          "context_chars": 2771,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "49c2b9fab7070ca8",
+            "4df75bb87a1c64e5",
+            "84c1dc0ce1057dfc",
+            "2379f811669bef33",
+            "3680ccb8f47c413e"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "ed2acb097ec59859",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 1.1,
+      "model_output_for_review": {
+        "status": "insufficient",
+        "claims": []
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN04",
+        "query": "Quel couple a cet outil ?",
+        "category": "ambiguous product",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quel couple a cet outil ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "4d20acf2ffaa3626",
+            "document_id": "full-EATL12001%20Technical%20Data-ec00f05d",
+            "file_name": "EATL12001%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EATL12001%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "list_item",
+            "score": 0.6114553640001221,
+            "text": "1. Couple industriel élevé, démontage et montage des boulons en toute simplicité\n2. Léger et durable, adapté aux travaux de montage et démontage dans des espaces étroits\n3. Structure professionnelle, couple plus important, durée de vie plus longue\n4. Supporte la rotation avant et arrière, réglable selon les besoins, travail plus facile\n5. Échappement direct, garantit la puissance de la clé\n6. Interrupteur à plaque de pression, facile à presser\n7. Filtre en acier, empêche les débris métalliques et les particules d'entrer dans le corps de l'outil, protège le cylindre des rayures",
+            "evidence_kind": "child",
+            "parent_id": "82c3af845f7562f6",
+            "provenance": {
+              "dense_score": 0.62775284,
+              "dense_rank": 83,
+              "lexical_score": 0.6114553640001221,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "ae22722a9aeab3e8",
+            "document_id": "full-ELSL203051%20Technical%20Data-e04c020d",
+            "file_name": "ELSL203051%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELSL203051%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 0.3885446359998778,
+            "text": "Cet équipement est conçu pour couper des branches et des plantes d’un diamètre maximal de 30 mm (bois tendre). Le diamètre est plus petit pour le bois dur. Cet équipement ne convient pas à la coupe du métal. L’équipement doit être utilisé uniquement pour l’usage prévu.\nMoteur sans balais haute efficacité offrant plus de puissance et maximisant l’autonomie",
+            "evidence_kind": "child",
+            "parent_id": "a21376e6ffcb92b2",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.3885446359998778,
+              "lexical_rank": 2,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "ef4efa33647edc66",
+            "document_id": "full-EMCC8395%20Technical%20Data-48ab5b33",
+            "file_name": "EMCC8395%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EMCC8395%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 0.3885446359998778,
+            "text": "Polyvalent : cet ensemble est idéal pour les artisans, comprenant divers ciseaux adaptés à différents travaux, y compris le marquage, le perçage, l'incision, etc.",
+            "evidence_kind": "child",
+            "parent_id": "328234c3f5967899",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.3885446359998778,
+              "lexical_rank": 3,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "4d20acf2ffaa3626",
+            "document_id": "full-EATL12001%20Technical%20Data-ec00f05d",
+            "file_name": "EATL12001%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EATL12001%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 0.6114553640001221,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "82c3af845f7562f6",
+            "provenance": {
+              "dense_score": 0.62775284,
+              "dense_rank": 83,
+              "lexical_score": 0.6114553640001221,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Generation or grounding validation failed: ValueError: Product identity is ambiguous for quantitative claims"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [],
+            "unknown_identifiers": [],
+            "route_source": null,
+            "route_status": "unrouted",
+            "tokens": [
+              "a",
+              "cet",
+              "couple",
+              "outil",
+              "quel"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "4d20acf2ffaa3626",
+            "ae22722a9aeab3e8",
+            "ef4efa33647edc66"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2915,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "4d20acf2ffaa3626",
+            "ae22722a9aeab3e8",
+            "ef4efa33647edc66",
+            "82c3af845f7562f6"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "a21376e6ffcb92b2",
+            "reason": "duplicate body"
+          },
+          {
+            "kind": "parent",
+            "parent_id": "328234c3f5967899",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 1.97,
+      "model_output_for_review": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "Couple industriel élevé",
+            "support_chunk_ids": [
+              "4d20acf2ffaa3626"
+            ]
+          }
+        ]
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN05",
+        "query": "Quelle tension a ABCXYZ987654 ?",
+        "category": "unknown reference",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quelle tension a ABCXYZ987654 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "bcdeb2a5098c19e0",
+            "document_id": "full-ECUT451%20Technical%20Data-d6d7ef3d",
+            "file_name": "ECUT451%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECUT451%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 0.35094557296756357,
+            "text": "Tension d'entrée (V) : 1~220-240 Fréquence (Hz) : 50/60\nCourant de sortie (A) : 15-40A Épaisseur de coupe : ≤12mm\nCycle de service (%) : 40%\nTension à vide (V) : 400",
+            "evidence_kind": "child",
+            "parent_id": "cd3ca726faea4336",
+            "provenance": {
+              "dense_score": 0.70615715,
+              "dense_rank": 1,
+              "lexical_score": 0.35094557296756357,
+              "lexical_rank": 17,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "7bd6cf9f6febf5fd",
+            "document_id": "full-EMCT14006%20Technical%20Data-488d023a",
+            "file_name": "EMCT14006%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\EMCT14006%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 0.35094557296756357,
+            "text": "Tension : 220-240V~50/60Hz Puissance d'entrée : 1400W\nVitesse à vide : 13000 tr/min\nDiamètre de la lame : 110x20mm",
+            "evidence_kind": "child",
+            "parent_id": "8400763917a9ce59",
+            "provenance": {
+              "dense_score": 0.7041758,
+              "dense_rank": 2,
+              "lexical_score": 0.35094557296756357,
+              "lexical_rank": 55,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "e5f78778d3c8ba00",
+            "document_id": "full-ELSL203051%20Technical%20Data-e04c020d",
+            "file_name": "ELSL203051%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELSL203051%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 0.35094557296756357,
+            "text": "Tension de charge : 220-240 V~50/60 Hz Conditionné dans une mallette de transport",
+            "evidence_kind": "child",
+            "parent_id": "0bdc7480187ca0fb",
+            "provenance": {
+              "dense_score": 0.69131553,
+              "dense_rank": 3,
+              "lexical_score": 0.35094557296756357,
+              "lexical_rank": 53,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Unknown or malformed product reference: ABCXYZ987654"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [],
+            "unknown_identifiers": [
+              "ABCXYZ987654"
+            ],
+            "route_source": null,
+            "route_status": "unrouted",
+            "tokens": [
+              "a",
+              "abcxyz987654",
+              "quelle",
+              "tension"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "bcdeb2a5098c19e0",
+            "7bd6cf9f6febf5fd",
+            "e5f78778d3c8ba00"
+          ],
+          "supplied_sources": 3,
+          "context_chars": 1714,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "bcdeb2a5098c19e0",
+            "7bd6cf9f6febf5fd",
+            "e5f78778d3c8ba00"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "cd3ca726faea4336",
+            "reason": "duplicate body"
+          },
+          {
+            "kind": "parent",
+            "parent_id": "8400763917a9ce59",
+            "reason": "duplicate body"
+          },
+          {
+            "kind": "parent",
+            "parent_id": "0bdc7480187ca0fb",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 0.06,
+      "model_output_for_review": null,
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN06",
+        "query": "Comparer ECIDL209686 et ABCXYZ987654.",
+        "category": "partially unknown comparison",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "The supplied evidence is insufficient to answer reliably. Please clarify the product or provide the required documentation.",
+        "grounded": false,
+        "retrieval_query": "Comparer ECIDL209686 et ABCXYZ987654.",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "001553e7e1b254a3",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "LED"
+            ],
+            "block_type": "list_item",
+            "score": 1.6102074048295094,
+            "text": "2 batteries 4,0 Ah (EBPK20021)\n1 chargeur (EFCR20411)",
+            "evidence_kind": "child",
+            "parent_id": "f02d14d0cfb22be9",
+            "provenance": {
+              "dense_score": 0.56437916,
+              "dense_rank": 19,
+              "lexical_score": 1.6102074048295094,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "091c3b5f05c48c7e",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.6102074048295094,
+            "text": "percer des trous, visser, percer le béton",
+            "evidence_kind": "child",
+            "parent_id": "0cc40be3270a8583",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6102074048295094,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "0cee165217ebec2b",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.6102074048295094,
+            "text": "Boîte de vitesses mécanique à 2 vitesses\nFonction de verrouillage de la broche Éclairage de travail LED intégré\nIndicateur de charge de la batterie",
+            "evidence_kind": "child",
+            "parent_id": "0cc40be3270a8583",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6102074048295094,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "001553e7e1b254a3",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.6102074048295094,
+            "text": "LED",
+            "evidence_kind": "verified_parent",
+            "parent_id": "f02d14d0cfb22be9",
+            "provenance": {
+              "dense_score": 0.56437916,
+              "dense_rank": 19,
+              "lexical_score": 1.6102074048295094,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 5",
+            "chunk_id": "091c3b5f05c48c7e",
+            "document_id": "full-ECIDL209686%20Technical%20Data-9f2a71e5",
+            "file_name": "ECIDL209686%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ECIDL209686%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.6102074048295094,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "0cc40be3270a8583",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.6102074048295094,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.3333333333333333,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Unknown or malformed product reference: ABCXYZ987654"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ECIDL209686"
+            ],
+            "unknown_identifiers": [
+              "ABCXYZ987654"
+            ],
+            "route_source": null,
+            "route_status": "unrouted",
+            "tokens": [
+              "abcxyz987654",
+              "comparer",
+              "ecidl209686",
+              "et"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "001553e7e1b254a3",
+            "091c3b5f05c48c7e",
+            "0cee165217ebec2b"
+          ],
+          "supplied_sources": 5,
+          "context_chars": 2425,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "001553e7e1b254a3",
+            "091c3b5f05c48c7e",
+            "0cee165217ebec2b",
+            "f02d14d0cfb22be9",
+            "0cc40be3270a8583"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": []
+      },
+      "seconds": 0.1,
+      "model_output_for_review": null,
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "English refusal for French query",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN07",
+        "query": "Quel temps fera-t-il demain ?",
+        "category": "outside corpus",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quel temps fera-t-il demain ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "988fd48d3f30adaf",
+            "document_id": "full-SUPROTEC1-ed82cb2d",
+            "file_name": "SUPROTEC1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\SUPROTEC1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "•  NF P 18 - 370."
+            ],
+            "block_type": "list_item",
+            "score": 0.30300060360999476,
+            "text": "Il peut s’appliquer en verƟcal ou en horizontal. L’applicaƟon se fera de",
+            "evidence_kind": "child",
+            "parent_id": "7add5e7f0e8059bf",
+            "provenance": {
+              "dense_score": 0.6356563,
+              "dense_rank": 99,
+              "lexical_score": 0.30300060360999476,
+              "lexical_rank": 2,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "46dd229bbe4ac257",
+            "document_id": "full-RUSTIKA%20TYROLIEN1-b9628ec3",
+            "file_name": "RUSTIKA%20TYROLIEN1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\RUSTIKA%20TYROLIEN1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOCUMENT DE RÉFÉRENCE"
+            ],
+            "block_type": "list_item",
+            "score": 0.30300060360999476,
+            "text": "• Gâcher avec environ 7L d’eau par sac de 25 kg jusqu’à l’obtenƟon d’un morƟer souple et homogène. Le gâchage se fera de préférence avec un malaxeur à vitesse lente, éventuellement manuel, de façon à obtenir un mélange homogène.Le malaxage sera renouvelé pendant l’applicaƟon pour éviter la formaƟon de dépôts.",
+            "evidence_kind": "child",
+            "parent_id": "774ce52d9a7008e7",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.30300060360999476,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "32831484c3a0dcfb",
+            "document_id": "full-PRO%20200%20V4-8f310261",
+            "file_name": "PRO%20200%20V4.pdf",
+            "source_path": "ai_data\\raw\\sofap\\PRO%20200%20V4.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "DOCUMENT DE RÉFÉRENCE"
+            ],
+            "block_type": "paragraph",
+            "score": 0.19188981584616568,
+            "text": "Le caractérisƟque T est recommandé pour les murs en intérieur.",
+            "evidence_kind": "child",
+            "parent_id": "fd83189584fcb7fb",
+            "provenance": {
+              "dense_score": 0.6425209,
+              "dense_rank": 93,
+              "lexical_score": 0.19188981584616568,
+              "lexical_rank": 35,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "988fd48d3f30adaf",
+            "document_id": "full-SUPROTEC1-ed82cb2d",
+            "file_name": "SUPROTEC1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\SUPROTEC1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 0.30300060360999476,
+            "text": "•  NF P 18 - 370.",
+            "evidence_kind": "verified_parent",
+            "parent_id": "7add5e7f0e8059bf",
+            "provenance": {
+              "dense_score": 0.6356563,
+              "dense_rank": 99,
+              "lexical_score": 0.30300060360999476,
+              "lexical_rank": 2,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "dense",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 5",
+            "chunk_id": "46dd229bbe4ac257",
+            "document_id": "full-RUSTIKA%20TYROLIEN1-b9628ec3",
+            "file_name": "RUSTIKA%20TYROLIEN1.pdf",
+            "source_path": "ai_data\\raw\\sofap\\RUSTIKA%20TYROLIEN1.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 0.30300060360999476,
+            "text": "DOCUMENT DE RÉFÉRENCE",
+            "evidence_kind": "verified_parent",
+            "parent_id": "774ce52d9a7008e7",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 0.30300060360999476,
+              "lexical_rank": 1,
+              "identifier_match": false,
+              "filename_match": 0.0,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Model reported insufficient or ambiguous evidence"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [],
+            "unknown_identifiers": [],
+            "route_source": null,
+            "route_status": "unrouted",
+            "tokens": [
+              "demain",
+              "fera",
+              "il",
+              "quel",
+              "t",
+              "temps"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "988fd48d3f30adaf",
+            "46dd229bbe4ac257",
+            "32831484c3a0dcfb"
+          ],
+          "supplied_sources": 5,
+          "context_chars": 2296,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "988fd48d3f30adaf",
+            "46dd229bbe4ac257",
+            "32831484c3a0dcfb",
+            "7add5e7f0e8059bf",
+            "774ce52d9a7008e7"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "fd83189584fcb7fb",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 1.08,
+      "model_output_for_review": {
+        "status": "insufficient",
+        "claims": []
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    },
+    {
+      "case": {
+        "id": "IN08",
+        "query": "Quelle resistance au feu en minutes est certifiee pour ELAB2078 ?",
+        "category": "unavailable certification",
+        "expected": "insufficient"
+      },
+      "response": {
+        "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+        "grounded": false,
+        "retrieval_query": "Quelle resistance au feu en minutes est certifiee pour ELAB2078 ?",
+        "sources": [
+          {
+            "source_id": "SOURCE 1",
+            "chunk_id": "0bca250d1cabc854",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "key_value",
+            "score": 1.4307536674514185,
+            "text": "Facile à installer et à démarrer Tension : 20 V\nVitesse à vide : 18 000 tr/min",
+            "evidence_kind": "child",
+            "parent_id": "c2355a1218b1849f",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4307536674514185,
+              "lexical_rank": 1,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 2",
+            "chunk_id": "1b86209b6c0e4dcb",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.4307536674514185,
+            "text": "L’outil électrique est destiné à souffler des substances non nocives (par exemple, des débris de sciage, des copeaux de métal, de la poussière de pierre, etc.) produites lors du sciage, du perçage ou du meulage.\nL’outil électrique ne convient pas au soufflage de matériaux chauds, inflammables ou explosifs.\nConception légère et compacte",
+            "evidence_kind": "child",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4307536674514185,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 3",
+            "chunk_id": "9b7d6108865ce3be",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [
+              "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES"
+            ],
+            "block_type": "paragraph",
+            "score": 1.4307536674514185,
+            "text": "Débit d’air maximal : 2,7 m³/min Batterie et chargeur vendus séparément Emballé dans une boîte couleur",
+            "evidence_kind": "child",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4307536674514185,
+              "lexical_rank": 3,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          },
+          {
+            "source_id": "SOURCE 4",
+            "chunk_id": "1b86209b6c0e4dcb",
+            "document_id": "full-ELAB2078%20Technical%20Data-f807d4c7",
+            "file_name": "ELAB2078%20Technical%20Data.pdf",
+            "source_path": "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "section_path": [],
+            "block_type": "heading",
+            "score": 1.4307536674514185,
+            "text": "POINTS DE VENTE\nUTILISATION\nDESCRIPTION ET\nCARACTÉRISTIQUES",
+            "evidence_kind": "verified_parent",
+            "parent_id": "08d35190dfc2d4bd",
+            "provenance": {
+              "dense_score": null,
+              "dense_rank": null,
+              "lexical_score": 1.4307536674514185,
+              "lexical_rank": 2,
+              "identifier_match": true,
+              "filename_match": 0.2,
+              "numeric_match": 0.0,
+              "candidate_sources": [
+                "identifier_route",
+                "lexical"
+              ]
+            }
+          }
+        ],
+        "warnings": [
+          "Evidence omitted; see omissions for exact reasons",
+          "Model reported insufficient or ambiguous evidence"
+        ],
+        "model": "qwen2.5-coder:7b",
+        "retrieval_metadata": {
+          "query_analysis": {
+            "identifiers": [
+              "ELAB2078"
+            ],
+            "unknown_identifiers": [],
+            "route_source": [
+              "full-ELAB2078%20Technical%20Data-f807d4c7",
+              "ELAB2078%20Technical%20Data.pdf",
+              "ai_data\\raw\\emtop\\ELAB2078%20Technical%20Data.pdf"
+            ],
+            "route_status": "unique",
+            "tokens": [
+              "au",
+              "certifiee",
+              "elab2078",
+              "en",
+              "est",
+              "feu",
+              "minutes",
+              "pour",
+              "quelle",
+              "resistance"
+            ],
+            "snapshot_sha256": "64b1fbf8886cd2b4620b88206eeb69ca48cf41ecd7edc87cabc03dca4abed979"
+          },
+          "retrieved_chunks": [
+            "0bca250d1cabc854",
+            "1b86209b6c0e4dcb",
+            "9b7d6108865ce3be"
+          ],
+          "supplied_sources": 4,
+          "context_chars": 2318,
+          "max_context_chars": 6000,
+          "allowed_support_chunk_ids": [
+            "0bca250d1cabc854",
+            "1b86209b6c0e4dcb",
+            "9b7d6108865ce3be",
+            "08d35190dfc2d4bd"
+          ],
+          "validation_scope": "Context-only support IDs; extractive original evidence lines; explicit substrate polarity; completeness and question relevance require review"
+        },
+        "claims": [],
+        "status": "insufficient",
+        "omissions": [
+          {
+            "kind": "parent",
+            "parent_id": "c2355a1218b1849f",
+            "reason": "duplicate body"
+          }
+        ]
+      },
+      "seconds": 0.66,
+      "model_output_for_review": {
+        "status": "insufficient",
+        "claims": []
+      },
+      "deterministic_checks": {
+        "exact_quote_citation_numeric_unit_reference_checks": null,
+        "cited_expected_source": null,
+        "status": "insufficient"
+      },
+      "manual_review": {
+        "reviewer": "assistant qualitative review; not independent human certification",
+        "factual_correctness": "not applicable",
+        "evidence_support": "not applicable",
+        "completeness": "appropriate abstention",
+        "product_identity": "not applicable",
+        "answer_language": "French refusal",
+        "hallucination": "none observed in returned answer",
+        "abstention": "unsupported/ambiguous request"
+      }
+    }
+  ],
+  "manual_review_required": true,
+  "integrity": {
+    "collection_unchanged": true,
+    "protected_files_unchanged": true
+  },
+  "complete": true,
+  "review_summary": {
+    "positive_answered": 7,
+    "positive_total": 8,
+    "false_abstentions": [
+      "IV08"
+    ],
+    "negative_abstentions": 8,
+    "negative_total": 8,
+    "returned_claims": 8,
+    "exact_citations_valid": 8,
+    "prohibited_support_ids_accepted": 0,
+    "unsupported_returned_claims_observed": 0,
+    "reviewer": "assistant; finite-sample extractive evidence review",
+    "independent_human_review_pending": true
+  },
+  "evaluation_role": "independent 16-case validation; frozen before safety/markup refinements; evaluated once without tuning on results"
+}

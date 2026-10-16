@@ -1,0 +1,116 @@
+[
+  {
+    "id": "C01",
+    "expected": "resolved_product",
+    "answer": "Les preuves sélectionnées ne permettent pas de répondre à toutes les caractéristiques demandées avec certitude. Posez une question sur un seul point ou précisez la documentation nécessaire.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": null,
+    "conversation_product_ids": [
+      "product-44cf541c41a5bca59f3c"
+    ],
+    "abstention_reason": "requested_fact_mismatch",
+    "accepted_claims": 0,
+    "seconds": 8.658
+  },
+  {
+    "id": "C02",
+    "expected": "resolved_product",
+    "answer": "The supplied evidence is insufficient to answer reliably. Please clarify the product or provide the required documentation.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": null,
+    "conversation_product_ids": [
+      "product-44cf541c41a5bca59f3c"
+    ],
+    "abstention_reason": "insufficient_or_ambiguous_evidence",
+    "accepted_claims": 0,
+    "seconds": 0.736
+  },
+  {
+    "id": "C03",
+    "expected": "clarification",
+    "answer": "De quel produit parlez-vous ? Précisez son nom ou sa référence pour que je puisse vérifier les documents.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": "ambiguous_conversation_product",
+    "conversation_product_ids": [],
+    "abstention_reason": "no_usable_context",
+    "accepted_claims": 0,
+    "seconds": 0.243
+  },
+  {
+    "id": "C04",
+    "expected": "clarification",
+    "answer": "De quel produit parlez-vous ? Précisez son nom ou sa référence pour que je puisse vérifier les documents.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": "missing_conversation_product",
+    "conversation_product_ids": [],
+    "abstention_reason": "no_usable_context",
+    "accepted_claims": 0,
+    "seconds": 0.116
+  },
+  {
+    "id": "C05",
+    "expected": "resolved_product",
+    "answer": "The supplied evidence is insufficient to answer reliably. Please clarify the product or provide the required documentation.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": null,
+    "conversation_product_ids": [
+      "product-2a84ef365b4e751f45a2"
+    ],
+    "abstention_reason": "unsupported_claim",
+    "accepted_claims": 0,
+    "seconds": 2.494
+  },
+  {
+    "id": "C06",
+    "expected": "clarification",
+    "answer": "De quel produit parlez-vous ? Précisez son nom ou sa référence pour que je puisse vérifier les documents.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": "ambiguous_conversation_product",
+    "conversation_product_ids": [],
+    "abstention_reason": "no_usable_context",
+    "accepted_claims": 0,
+    "seconds": 0.24
+  },
+  {
+    "id": "C07",
+    "expected": "standalone",
+    "answer": "Résistance en flexion >2 Mpa Résistance en compression >6 Mpa [SOURCE 1]",
+    "sources": [
+      {
+        "source_id": "SOURCE 1",
+        "chunk_id": "a8857b36f01456ff",
+        "support_chunk_id": "a8857b36f01456ff",
+        "document_id": "full-fiche_technique_pap2-9b35b6f2",
+        "file_name": "fiche_technique_pap2.pdf",
+        "product_name": "SOURCE 1: fiche_technique_pap2.pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "evidence_kind": "child"
+      }
+    ],
+    "status": "answered",
+    "conversation_reason": null,
+    "conversation_product_ids": [],
+    "abstention_reason": null,
+    "accepted_claims": 1,
+    "seconds": 2.97
+  },
+  {
+    "id": "C08",
+    "expected": "no_incomplete_answer",
+    "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+    "sources": [],
+    "status": "insufficient",
+    "conversation_reason": null,
+    "conversation_product_ids": [],
+    "abstention_reason": "insufficient_or_ambiguous_evidence",
+    "accepted_claims": 0,
+    "seconds": 0.471
+  }
+]

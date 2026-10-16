@@ -1,0 +1,14 @@
+{
+  "frozen_before_execution": "2026-09-27",
+  "purpose": "Fresh conversation smoke cases; no retrieval tuning or answer-rate benchmark",
+  "cases": [
+    {"id":"C01","question":"Et sa consommation ?","history":[{"role":"user","content":"Nous parlons de LIKA PAP2."}],"conversation_id":"fresh-c01","expected":"resolved_product"},
+    {"id":"C02","question":"What is its weight?","history":[{"role":"user","content":"We are discussing LIKA PAP2."}],"conversation_id":"fresh-c02","expected":"resolved_product"},
+    {"id":"C03","question":"Et son épaisseur ?","history":[{"role":"user","content":"Comparer LIKA PAP2 et LIKA FINA"}],"conversation_id":"fresh-c03","expected":"clarification"},
+    {"id":"C04","question":"Et sa consommation ?","history":[{"role":"user","content":"LIKA PAP2"}],"conversation_id":null,"expected":"clarification"},
+    {"id":"C05","question":"Et sa consommation ?","history":[{"role":"user","content":"LIKA PAP2"},{"role":"user","content":"LIKA FINA"}],"conversation_id":"fresh-c05","expected":"resolved_product"},
+    {"id":"C06","question":"Et sa consommation ?","history":[{"role":"user","content":"LIKA PAP2"},{"role":"user","content":"LIKA PAP2 EXTRAUNKNOWN"}],"conversation_id":"fresh-c06","expected":"clarification"},
+    {"id":"C07","question":"LIKA PAP2 : quelles résistances en flexion et en compression figurent dans la fiche ?","history":[],"conversation_id":"fresh-c07","expected":"standalone"},
+    {"id":"C08","question":"Pour LIKA PAP2, indiquez son poids et sa tension électrique documentés.","history":[],"conversation_id":"fresh-c08","expected":"no_incomplete_answer"}
+  ]
+}

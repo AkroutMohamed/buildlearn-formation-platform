@@ -1,0 +1,559 @@
+{
+  "protocol": "one cold S01, followed by ten warm S01-S10; exclusive profiled wall time; no tuning",
+  "flag_enabled": false,
+  "integrity_before": {
+    "buildlearn_products": {
+      "points": 624,
+      "sha256": "266b67d281d741c2d8b98b027b7bffffa9662a9e6942a2a8aa7606066c36e754"
+    },
+    "buildlearn_products_hierarchical_v1": {
+      "points": 2637,
+      "sha256": "f0634b2003aa9d7d24b88233149943d3670a2be8bb06e2b690c8e3cc211b533f"
+    }
+  },
+  "records": [
+    {
+      "id": "S01",
+      "cold": true,
+      "stages_ms": {
+        "adapter_initialization": 181.4620000004652,
+        "snapshot_loading": 25683.479599999373,
+        "lexical_retrieval": 190.02240000008896,
+        "query_embedding": 6981.719299999895,
+        "parent_context": 15.571399999316782,
+        "dense_qdrant": 4092.8869999997914,
+        "candidate_merge_rerank": 40.286900001774484,
+        "qwen_generation": 8621.776200000568,
+        "validation": 6.026599999131577,
+        "response_mapping": 0.040300000364368316,
+        "other_mapping_telemetry": 3.741799999261275,
+        "total": 45817.01350000003
+      },
+      "telemetry": {
+        "request_id": "873a5537-07e6-49e3-b247-fe6fe6d8592f",
+        "retrieval_duration_ms": 37003.612800000155,
+        "generation_duration_ms": 8621.790799999872,
+        "validation_duration_ms": 6.025099999533268,
+        "total_duration_ms": 45816.8298999999,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "220-240 V ~ 50 Hz Puissance nominale : 1 500 W (2,0 HP) Tête max. [SOURCE 1]",
+      "citations": [
+        {
+          "text": "220-240 V ~ 50 Hz Puissance nominale : 1 500 W (2,0 HP) Tête max.",
+          "support_chunk_ids": [
+            "05633f7f50eb3a5d"
+          ],
+          "source_id": "SOURCE 1",
+          "quote": "220-240 V ~ 50 Hz Puissance nominale : 1 500 W (2,0 HP) Tête max.",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 1",
+          "chunk_id": "05633f7f50eb3a5d",
+          "support_chunk_id": "05633f7f50eb3a5d",
+          "document_id": "full-EWPPJ15001%20Technical%20Data-6b64b909",
+          "file_name": "EWPPJ15001 Technical Data.pdf",
+          "product_name": "SOURCE 1: EWPPJ15001 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S01",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.0059000003602704965,
+        "lexical_retrieval": 287.772099999529,
+        "query_embedding": 2037.9057000009198,
+        "parent_context": 17.295100000410457,
+        "dense_qdrant": 4135.408599999209,
+        "candidate_merge_rerank": 40.316700000403216,
+        "qwen_generation": 3798.838500000784,
+        "validation": 1.036000000567583,
+        "response_mapping": 0.03509999987727497,
+        "other_mapping_telemetry": 1.9001999971806072,
+        "total": 10320.513899999241
+      },
+      "telemetry": {
+        "request_id": "5b7d143e-ab52-43a0-8e4c-e9ae9c9aa477",
+        "retrieval_duration_ms": 6518.930700000055,
+        "generation_duration_ms": 3798.8507000000027,
+        "validation_duration_ms": 1.035799999954179,
+        "total_duration_ms": 10320.296100000633,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "220-240 V ~ 50 Hz Puissance nominale : 1 500 W (2,0 HP) Tête max. [SOURCE 1]",
+      "citations": [
+        {
+          "text": "220-240 V ~ 50 Hz Puissance nominale : 1 500 W (2,0 HP) Tête max.",
+          "support_chunk_ids": [
+            "05633f7f50eb3a5d"
+          ],
+          "source_id": "SOURCE 1",
+          "quote": "220-240 V ~ 50 Hz Puissance nominale : 1 500 W (2,0 HP) Tête max.",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 1",
+          "chunk_id": "05633f7f50eb3a5d",
+          "support_chunk_id": "05633f7f50eb3a5d",
+          "document_id": "full-EWPPJ15001%20Technical%20Data-6b64b909",
+          "file_name": "EWPPJ15001 Technical Data.pdf",
+          "product_name": "SOURCE 1: EWPPJ15001 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.005500000042957254,
+        "lexical_retrieval": 287.51330000068265,
+        "query_embedding": 2050.4531000005954,
+        "parent_context": 19.72500000101718,
+        "dense_qdrant": 4141.30539999951,
+        "candidate_merge_rerank": 35.211099998377904,
+        "qwen_generation": 4399.078100000224,
+        "validation": 1.5077999996719882,
+        "response_mapping": 0.051900000471505336,
+        "other_mapping_telemetry": 1.8924999994851532,
+        "total": 10936.74370000008
+      },
+      "telemetry": {
+        "request_id": "4feb75b2-0885-4924-8efd-e02a3ecd6640",
+        "retrieval_duration_ms": 6534.359000000222,
+        "generation_duration_ms": 4399.092000000564,
+        "validation_duration_ms": 1.507300000412215,
+        "total_duration_ms": 10936.560199999803,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "5 douilles (14,15,17,19,21mm) [SOURCE 1]",
+      "citations": [
+        {
+          "text": "5 douilles (14,15,17,19,21mm)",
+          "support_chunk_ids": [
+            "184599223da34346"
+          ],
+          "source_id": "SOURCE 1",
+          "quote": "5 douilles (14,15,17,19,21mm)",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 1",
+          "chunk_id": "184599223da34346",
+          "support_chunk_id": "184599223da34346",
+          "document_id": "full-ECIWL42461%20Technical%20Data-a7e3fb17",
+          "file_name": "ECIWL42461 Technical Data.pdf",
+          "product_name": "SOURCE 1: ECIWL42461 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.006600000233447645,
+        "lexical_retrieval": 301.64330000116024,
+        "query_embedding": 2048.5225000002174,
+        "parent_context": 35.21970000110741,
+        "dense_qdrant": 4131.7113999994035,
+        "candidate_merge_rerank": 40.02239999863377,
+        "qwen_generation": 5078.724599999987,
+        "validation": 2.3218000005726935,
+        "response_mapping": 0.05689999943570001,
+        "other_mapping_telemetry": 1.6483999988849973,
+        "total": 11639.877599999636
+      },
+      "telemetry": {
+        "request_id": "035ea89a-4188-4de4-9882-8808658a2010",
+        "retrieval_duration_ms": 6556.985199999872,
+        "generation_duration_ms": 5078.734799999438,
+        "validation_duration_ms": 2.319100000022445,
+        "total_duration_ms": 11639.73470000019,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 5,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "6000uA/60mA/600mA/10A Tension DC :\n600mV/6V/60V/600V/1000V Tension AC : [SOURCE 1]",
+      "citations": [
+        {
+          "text": "6000uA/60mA/600mA/10A Tension DC :\n600mV/6V/60V/600V/1000V Tension AC :",
+          "support_chunk_ids": [
+            "27229e5e60003022"
+          ],
+          "source_id": "SOURCE 1",
+          "quote": "6000uA/60mA/600mA/10A Tension DC :\n600mV/6V/60V/600V/1000V Tension AC :",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 1",
+          "chunk_id": "27229e5e60003022",
+          "support_chunk_id": "27229e5e60003022",
+          "document_id": "full-EDMR5310002%20Technical%20Data-26abf679",
+          "file_name": "EDMR5310002 Technical Data.pdf",
+          "product_name": "SOURCE 1: EDMR5310002 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.005500000042957254,
+        "lexical_retrieval": 290.35430000021734,
+        "query_embedding": 2054.3731999996453,
+        "parent_context": 13.190700000450306,
+        "dense_qdrant": 4121.49270000009,
+        "candidate_merge_rerank": 30.88729999944917,
+        "qwen_generation": 4365.230999999767,
+        "validation": 1.3613000000987086,
+        "response_mapping": 0.046099999963189475,
+        "other_mapping_telemetry": 1.9081000000369386,
+        "total": 10878.85019999976
+      },
+      "telemetry": {
+        "request_id": "d374a38e-b521-4df8-91ff-221ea06ba3ab",
+        "retrieval_duration_ms": 6510.9653999998045,
+        "generation_duration_ms": 4365.240299999641,
+        "validation_duration_ms": 1.3599000003523543,
+        "total_duration_ms": 10878.69899999987,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "Tension : 20 V ; Puissance dissipée par la LED : 22,5 W ; Flux lumineux : [SOURCE 1]",
+      "citations": [
+        {
+          "text": "Tension : 20 V ; Puissance dissipée par la LED : 22,5 W ; Flux lumineux :",
+          "support_chunk_ids": [
+            "94f40bad853ce0b0"
+          ],
+          "source_id": "SOURCE 1",
+          "quote": "Tension : 20 V ; Puissance dissipée par la LED : 22,5 W ; Flux lumineux :",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 1",
+          "chunk_id": "94f40bad853ce0b0",
+          "support_chunk_id": "94f40bad853ce0b0",
+          "document_id": "full-ELWLI20885%20Technical%20Data-01cea7fd",
+          "file_name": "ELWLI20885 Technical Data.pdf",
+          "product_name": "SOURCE 1: ELWLI20885 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.007600000571983401,
+        "lexical_retrieval": 294.55589999997756,
+        "query_embedding": 2056.025099999715,
+        "parent_context": 18.718899999839778,
+        "dense_qdrant": 4146.067600000606,
+        "candidate_merge_rerank": 42.34939999969356,
+        "qwen_generation": 4004.1221999999834,
+        "validation": 2.1207999998296145,
+        "response_mapping": 0.11970000014116522,
+        "other_mapping_telemetry": 2.0092000004297006,
+        "total": 10566.096400000788
+      },
+      "telemetry": {
+        "request_id": "07b1de32-3bdf-4b3c-bfd9-dc6802ba239e",
+        "retrieval_duration_ms": 6557.731500000045,
+        "generation_duration_ms": 4004.1345999998157,
+        "validation_duration_ms": 2.116599999681057,
+        "total_duration_ms": 10565.849900000103,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "Affichage : TRUR RMS 4000 counts Courant alternatif : 4A/40A/400A Tension DC/AC : 400mV/4V/40V/600V Résistance : 400Ω/4kΩ/40kΩ/400k [SOURCE 2]",
+      "citations": [
+        {
+          "text": "Affichage : TRUR RMS 4000 counts Courant alternatif : 4A/40A/400A Tension DC/AC : 400mV/4V/40V/600V Résistance : 400Ω/4kΩ/40kΩ/400k",
+          "support_chunk_ids": [
+            "a7234600ca41c779"
+          ],
+          "source_id": "SOURCE 2",
+          "quote": "Affichage : TRUR RMS 4000 counts Courant alternatif : 4A/40A/400A Tension DC/AC : 400mV/4V/40V/600V Résistance : 400Ω/4kΩ/40kΩ/400k",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 2",
+          "chunk_id": "a7234600ca41c779",
+          "support_chunk_id": "a7234600ca41c779",
+          "document_id": "full-EDMR762001%20Technical%20Data-49b182de",
+          "file_name": "EDMR762001 Technical Data.pdf",
+          "product_name": "SOURCE 2: EDMR762001 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.006600000233447645,
+        "lexical_retrieval": 274.1998000001331,
+        "query_embedding": 2045.4157999993186,
+        "parent_context": 21.061799999188224,
+        "dense_qdrant": 4130.354300000363,
+        "candidate_merge_rerank": 32.39680000115186,
+        "qwen_generation": 4466.118100000131,
+        "validation": 4.39379999988887,
+        "response_mapping": 0.034300000152143184,
+        "other_mapping_telemetry": 1.201299999593175,
+        "total": 10975.182600000153
+      },
+      "telemetry": {
+        "request_id": "5927eca8-49a8-4bdf-9522-82f2032da416",
+        "retrieval_duration_ms": 6503.330700000333,
+        "generation_duration_ms": 4466.133599999921,
+        "validation_duration_ms": 4.3941999992966885,
+        "total_duration_ms": 10975.035499999649,
+        "outcome": "answered",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 1,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "answered",
+      "answer": "1. Pompage des eaux usées\n2. Irrigation\n3. Convient à un usage domestique [SOURCE 2]",
+      "citations": [
+        {
+          "text": "1. Pompage des eaux usées\n2. Irrigation\n3. Convient à un usage domestique",
+          "support_chunk_ids": [
+            "d5b880aa9394a1f9"
+          ],
+          "source_id": "SOURCE 2",
+          "quote": "1. Pompage des eaux usées\n2. Irrigation\n3. Convient à un usage domestique",
+          "validation": "original_evidence_lines"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SOURCE 2",
+          "chunk_id": "d5b880aa9394a1f9",
+          "support_chunk_id": "d5b880aa9394a1f9",
+          "document_id": "full-EWPPQD07501%20Technical%20Data-3fe10d3d",
+          "file_name": "EWPPQD07501 Technical Data.pdf",
+          "product_name": "SOURCE 2: EWPPQD07501 Technical Data.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "evidence_kind": "child"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.009399999726156238,
+        "lexical_retrieval": 291.08850000102393,
+        "query_embedding": 2072.499500000049,
+        "parent_context": 59.995999999046035,
+        "dense_qdrant": 4129.232499999489,
+        "candidate_merge_rerank": 34.718200000497745,
+        "response_mapping": 0.00599999930273043,
+        "other_mapping_telemetry": 2.553000000261818,
+        "total": 6590.103099999396
+      },
+      "telemetry": {
+        "request_id": "1f557568-ef99-4782-ad4d-b2af816867b0",
+        "retrieval_duration_ms": 6588.122699999985,
+        "generation_duration_ms": 0.0,
+        "validation_duration_ms": 0.0,
+        "total_duration_ms": 6589.955200000077,
+        "outcome": "abstained",
+        "retrieved_sources": 3,
+        "supplied_sources": 3,
+        "accepted_claims": 0,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "insufficient",
+      "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+      "citations": [],
+      "sources": []
+    },
+    {
+      "id": "S08",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.008800000614428427,
+        "lexical_retrieval": 278.96999999939,
+        "query_embedding": 14.864700000543962,
+        "parent_context": 40.43759999967733,
+        "dense_qdrant": 4182.524999999259,
+        "candidate_merge_rerank": 43.243200000688375,
+        "qwen_generation": 4322.964899999533,
+        "validation": 2.44970000039757,
+        "response_mapping": 0.026199999410891905,
+        "other_mapping_telemetry": 1.5408999997816863,
+        "total": 8887.030999999297
+      },
+      "telemetry": {
+        "request_id": "e8d88bf2-86e1-4b59-a8ce-b846b2b1bf23",
+        "retrieval_duration_ms": 4560.105999999905,
+        "generation_duration_ms": 4322.977599999831,
+        "validation_duration_ms": 2.4481000000378117,
+        "total_duration_ms": 8886.894299999767,
+        "outcome": "abstained",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 0,
+        "validation_rejection_reason": "ambiguous_product",
+        "technical_failure": null
+      },
+      "status": "insufficient",
+      "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+      "citations": [],
+      "sources": []
+    },
+    {
+      "id": "S09",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.005099999725644011,
+        "lexical_retrieval": 291.5204000009908,
+        "query_embedding": 2029.163800000788,
+        "parent_context": 17.783899999813002,
+        "dense_qdrant": 4113.589999999931,
+        "candidate_merge_rerank": 36.32699999889155,
+        "qwen_generation": 3221.915199999785,
+        "validation": 0.01720000000204891,
+        "response_mapping": 0.004900000021734741,
+        "other_mapping_telemetry": 2.2300999999060878,
+        "total": 9712.557599999855
+      },
+      "telemetry": {
+        "request_id": "0c2f0aaa-5ba3-4a18-a175-72894f4169a3",
+        "retrieval_duration_ms": 6489.152199999808,
+        "generation_duration_ms": 3221.926000000167,
+        "validation_duration_ms": 0.017899999875226058,
+        "total_duration_ms": 9712.441300000137,
+        "outcome": "abstained",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 0,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "insufficient",
+      "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+      "citations": [],
+      "sources": []
+    },
+    {
+      "id": "S10",
+      "cold": false,
+      "stages_ms": {
+        "adapter_initialization": 0.007999999979801942,
+        "lexical_retrieval": 298.6343000002307,
+        "query_embedding": 2051.7546999999468,
+        "parent_context": 17.39839999936521,
+        "dense_qdrant": 4138.9387000008355,
+        "candidate_merge_rerank": 33.4404999994149,
+        "qwen_generation": 3153.130499999861,
+        "validation": 0.017999999727180693,
+        "response_mapping": 0.0052999994295532815,
+        "other_mapping_telemetry": 1.0256000014123856,
+        "total": 9694.354000000203
+      },
+      "telemetry": {
+        "request_id": "322a5af5-0078-4692-bebe-c1c2fec4d1b4",
+        "retrieval_duration_ms": 6540.1009000006525,
+        "generation_duration_ms": 3153.1396999998833,
+        "validation_duration_ms": 0.018700000509852543,
+        "total_duration_ms": 9694.201799999973,
+        "outcome": "abstained",
+        "retrieved_sources": 3,
+        "supplied_sources": 4,
+        "accepted_claims": 0,
+        "validation_rejection_reason": null,
+        "technical_failure": null
+      },
+      "status": "insufficient",
+      "answer": "Les preuves disponibles sont insuffisantes pour répondre avec certitude. Précisez le produit ou la documentation nécessaire.",
+      "citations": [],
+      "sources": []
+    }
+  ],
+  "integrity_after": {
+    "buildlearn_products": {
+      "points": 624,
+      "sha256": "266b67d281d741c2d8b98b027b7bffffa9662a9e6942a2a8aa7606066c36e754"
+    },
+    "buildlearn_products_hierarchical_v1": {
+      "points": 2637,
+      "sha256": "f0634b2003aa9d7d24b88233149943d3670a2be8bb06e2b690c8e3cc211b533f"
+    }
+  },
+  "integrity": {
+    "protected_files_unchanged": true,
+    "collections_unchanged": true,
+    "exact_shadow_replay": true,
+    "flag_disabled": true
+  }
+}

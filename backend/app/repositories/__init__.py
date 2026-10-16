@@ -1,0 +1,17 @@
+from app.repositories.analytics_repository import AnalyticsRepository
+from app.repositories.answer_repository import AnswerRepository
+from app.repositories.conversation_repository import ConversationRepository
+from app.repositories.course_instructor_repository import CourseInstructorRepository
+from app.repositories.course_repository import CourseRepository
+from app.repositories.live_session_repository import LiveSessionRepository
+from app.repositories.lesson_repository import LessonRepository
+from app.repositories.message_repository import MessageRepository
+from app.repositories.module_repository import ModuleRepository
+from app.repositories.notification_repository import NotificationRepository
+from app.repositories.question_repository import QuestionRepository
+from app.repositories.quiz_repository import QuizRepository
+from app.repositories.recorded_video_repository import RecordedVideoRepository
+from app.repositories.resource_repository import ResourceRepository
+from app.repositories.student_repository import StudentRepository
+from app.repositories.user_repository import UserRepository
+

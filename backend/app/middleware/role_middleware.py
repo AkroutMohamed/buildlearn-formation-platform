@@ -1,0 +1,13 @@
+from fastapi import HTTPException
+
+
+def require_role(allowed_roles: list):
+    def role_checker(current_user):
+        if current_user.role.value not in allowed_roles:
+            raise HTTPException(
+                status_code=403,
+                detail="Access denied"
+            )
+        return current_user
+
+    return role_checker

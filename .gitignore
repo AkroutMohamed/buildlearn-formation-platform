@@ -1,0 +1,33 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.key
+
+# Dependencies, builds, caches
+node_modules/
+.next/
+out/
+build/
+dist/
+venv/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.tsbuildinfo
+next-env.d.ts
+
+# Runtime data and uploads
+ai_data/
+storage/
+uploads/
+snapshots/
+*.sqlite*
+*.db
+
+# Local OS files
+.DS_Store
+Thumbs.db

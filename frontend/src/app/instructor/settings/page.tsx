@@ -1,0 +1,1 @@
+export default function InstructorSettingsPage() { return <div className="mx-auto max-w-3xl rounded-xl border border-dashed bg-white p-10 text-center"><h1 className="text-2xl font-bold">Settings are not available yet</h1><p className="mt-3 text-slate-600">There is no settings API in BuildLearn yet, so changes cannot be saved from this page.</p></div>; }
